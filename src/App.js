@@ -1,24 +1,58 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { useState } from 'react';
 
-function App() {
+import './App.css';
+import Persona from './Components/Persona';
+
+/*props!!!*/
+function App(props) {
+
+  const title = props.title;
+
+  console.log(title);
+
+  //estado: uso de hooks
+  const [visible, setVisible] = useState(true);
+  const [persona, setPersona] = useState(undefined);
+
+  const cambiarVisibilidad = () => {
+    //si vamos a cambiar valores primitivos: number, boolean
+    //podemos pasar el valor, pero si vamos a modificar o setear un objeto
+    //debo hacerlo por medio de una funcion
+    setVisible(!visible);
+  }
+
+  const cambiarPersona = () => {
+    const obj = { id: 2, name: 'juan' };
+    setPersona((prev) => obj);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {visible ?
+        <>
+          <h1>Hola</h1>
+          <p>que tal</p>
+          {title}
+        </>
+        :
+        <h2>
+          NO se puede mostrar nada!!!
+        </h2>
+      }
+      <div>
+        <button onClick={cambiarVisibilidad}>
+          Cambiar
+        </button>
+      </div>
+      <hr></hr>
+      <div>
+        <Persona persona={persona}/>
+        <button onClick={cambiarPersona}>
+          Cambiar
+        </button>
+      </div>
+    </>
   );
 }
 
