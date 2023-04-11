@@ -3,6 +3,7 @@ import { useState } from 'react';
 
 import './App.css';
 import Persona from './Components/Persona';
+import Turnos from './pages/turnos/Turnos';
 
 /*props!!!*/
 function App(props) {
@@ -29,6 +30,7 @@ function App(props) {
 
   return (
     <>
+<<<<<<< Updated upstream
       {visible ?
         <>
           <h1>Hola</h1>
@@ -52,6 +54,10 @@ function App(props) {
           Cambiar
         </button>
       </div>
+=======
+        {/* <Persona persona={persona}/>         */}
+        <Turnos/>
+>>>>>>> Stashed changes
     </>
   );
 }
