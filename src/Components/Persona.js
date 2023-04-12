@@ -1,8 +1,5 @@
 import styles from './Persona.module.css';
-<<<<<<< Updated upstream
-=======
 import ListadoCometarios from '../pages/comentarios/ListadoComentarios';
->>>>>>> Stashed changes
 
 function Persona(props) {
 
