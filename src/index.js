@@ -14,3 +14,6 @@ root.render(
   // </React.StrictMode>
 );
 
+//redux: global
+//context API: page
+//rxjs: 
