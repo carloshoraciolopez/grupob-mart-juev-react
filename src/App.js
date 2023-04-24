@@ -1,15 +1,16 @@
 import React from 'react';
-import { Provider } from 'react-redux';
 import './App.css';
-<<<<<<< Updated upstream
-import ReduxPage from './pages/ReduxPage/ReduxPage';
+import { v4 as uuidv4 } from 'uuid';
 
-=======
-import ResourcePage from './Resource/ResourcePage';
->>>>>>> Stashed changes
+import ResourcePage from './Resource/ui/ResourcePage';
 function App() {
   return (
+    <>
+      {uuidv4()}
+      <hr/>
+      {crypto.randomUUID()}
       <ResourcePage/>
+    </>
   );
 }
 

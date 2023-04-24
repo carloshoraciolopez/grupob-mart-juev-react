@@ -4,7 +4,6 @@ export default class FindAll {
     }
 
     async exec(cmd) {
-        console.log(cmd);
         return await this.repository.findAll();
     }
 }
