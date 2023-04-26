@@ -6,20 +6,7 @@ import UpdateResource from "./update";
 
 export default class UseCaseFactory {
     
-    static resourceFindAll = (config) => {
-
-        /*
-        return new FindAllResources (
-            RepositoryFactory.axiosResourceRepository(config)
-        );
-        */
-
-        /*return new FindAllResources (
-            new AxiosResourceRepository(
-                config['REACT_APP_REQ_API'],//basePath
-                AdapterFactory.toListOfEntity
-            )
-        );*/
+    static finAllResources = (config) => {
         return new FindAllResources (
             RepositoryFactory.axiosResourceRepository(
                 {

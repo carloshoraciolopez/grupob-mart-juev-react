@@ -6,9 +6,9 @@ import ResourcePage from './Resource/ui/ResourcePage';
 function App() {
   return (
     <>
-      {uuidv4()}
-      <hr/>
-      {crypto.randomUUID()}
+      {/* {uuidv4()} */}
+      {/* <hr/> */}
+      {/* {crypto.randomUUID()} */}
       <ResourcePage/>
     </>
   );
