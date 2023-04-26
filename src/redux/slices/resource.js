@@ -22,6 +22,9 @@ export const resourceSlice = createSlice({
             currentState.resources = fitlered;
             return {...state,...currentState};
         },
+        updateResource: (state,action) => {
+            return {...state, ...action.payload};
+        },
         resetResource: () =>  {
             return ResourceEmptyState
         }
@@ -29,4 +32,4 @@ export const resourceSlice = createSlice({
 });
 
 
-export const {createResource,addResource,removeResource,resetResource } = resourceSlice.actions;
+export const {createResource,addResource,removeResource,updateResource, resetResource } = resourceSlice.actions;

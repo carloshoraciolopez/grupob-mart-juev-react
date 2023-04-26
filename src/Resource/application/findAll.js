@@ -1,9 +1,9 @@
-export default class FindAll {
+export default class FindAllResources {
     constructor(resourceReposiroty) {
         this.repository = resourceReposiroty;
     }
 
-    async exec(cmd) {
+    async exec() {
         return await this.repository.findAll();
     }
 }

@@ -3,7 +3,4 @@ export default class Resource {
         this.id = id;
         this.descripcion = descripcion;
     }
-    /*static createResource() {
-        return new Resource(-1,'');
-    }*/
 }

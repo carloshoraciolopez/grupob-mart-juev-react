@@ -1,3 +1,4 @@
-export class ResourceReposiroty {
-    findAll(){}//return an ResourceEntity
+export class ResourceRepository {
+    findAll(){}
+    upadte(id, resource){}
 }
