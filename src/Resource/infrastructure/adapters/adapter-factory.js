@@ -15,14 +15,14 @@ export const fromTo = (obj) => {
 import EntityFactory from './../../domain/entity-factory';
 
 export default class AdapterFactory {
-    static fromExternalToListOfEntity = (externalResources) => {
-        return EntityFactory.resourceEntity(externalResources)
+    static toListOfEntity = (externalResources) => {
+        return EntityFactory.listResourceEntity(externalResources)
     }
-
+    /*
     static toListOfEntity = (externalResources) => {
         const array = externalResources.data;
         return array.map(data => 
             EntityFactory.resourceEntity(data)
         );
-    }
+    } */   
 }

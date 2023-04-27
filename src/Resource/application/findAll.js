@@ -1,6 +1,7 @@
+//application
 export default class FindAllResources {
-    constructor(resourceReposiroty) {
-        this.repository = resourceReposiroty;
+    constructor(resourceRepository) {
+        this.repository = resourceRepository;
     }
 
     async exec() {

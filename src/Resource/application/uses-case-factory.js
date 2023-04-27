@@ -16,7 +16,7 @@ export default class UseCaseFactory {
             )
         );
     }
-
+    
     static updateResourceUseCase = (config) => {
         return new UpdateResource (
             RepositoryFactory.axiosResourceRepository(

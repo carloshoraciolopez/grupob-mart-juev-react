@@ -26,6 +26,8 @@ export default class AxiosResourceRepository extends ResourceRepository {
         const idx = this.dataSource.findIndex(d => d.id === id);
 
         this.dataSource[idx] = resource;
+        
+        //post con los parametros!!
 
         return this.dataSource;
     }
